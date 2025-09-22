@@ -3,6 +3,12 @@
     src: url('https://use.typekit.net/af/94379b/0000000000000000774b907c/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3');
 }
 
+@font-face{
+    font-family: roboto;
+    src: url('../assets/fonts/Roboto-VariableFont_wdth\,wght.ttf');
+}
+
+
 :root {
     --couleur-texte: #2a292b;
     --color-bg: #f9f4ed;
@@ -12,6 +18,47 @@
     --espacement: 0.75rem
 }
 
+header {
+    background-color: var(--color-bg);
+    border-radius: var(--border-radius);
+    font-family: roboto;
+}
+
+nav {
+    height: var(--hauteur-entete);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul{
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    
+}
+
+a {
+    text-decoration: none;
+    color: #000; /* couleur noire */
+}
+
+ul li:first-child {
+    font-weight: bold;
+}
+
+div{
+    justify-content: space-between;
+    padding-right: 2.5rem;
+
+}
+
+#imageLogo{
+    height: 50px;
+    padding-left: 2.5rem;
+}
+
+
 * {
     box-sizing: border-box;
 }
@@ -19,3 +66,4 @@
 body {
     margin: var(--espacement);
 }
+
