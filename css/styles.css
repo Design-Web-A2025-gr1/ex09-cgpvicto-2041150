@@ -67,3 +67,16 @@ body {
     margin: var(--espacement);
 }
 
+main{
+    display: flex;
+    flex-direction: row;
+    height: 80;
+}
+
+video{
+    width: 35;
+}
+
+article{
+    flex-grow: ;
+}
